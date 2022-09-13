@@ -11,7 +11,7 @@ const modal = createSlice({
     reducers: {
         openModal: (state, action) => {
             state.open = action.payload.name
-            state.data = action.payload.date || false
+            state.data = action.payload.data || false
 
         },
         closeModal: state => {
